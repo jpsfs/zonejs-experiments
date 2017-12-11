@@ -11,7 +11,7 @@ export class Task1 {
         setTimeout(() => {
             this.counter++;
 
-            console.log("Generating Zone with id = ", this.counter);
+            console.log("Generating Zone with id =", this.counter);
             
             const newZone = Zone.current.fork({
                 name: "Task1CreatedZone",
@@ -32,6 +32,6 @@ export class Task1 {
 
     public async onChanges(changes: any): Promise<void> {
         // console.log("Task 1 OnChanges", Zone.current.name);
-        console.log("Zone prop 'id' =", Zone.current.get("id"));
+        console.log("Finishing Zone 'id' =", Zone.current.get("id"));
     }
 }
