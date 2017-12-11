@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "command": "ZONEJS_Node",
+    "isShellCommand": false,
+    "args": [],
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "build",
+            "showOutput": "silent",
+            "isBuildCommand": true,
+            "command": "tsc",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        }
+    ]
+}
